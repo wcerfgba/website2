@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans");
+      body {
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: white;
+        background-color: blue;
+        margin: 0;
+      }
+      p {
+        margin: 0.5rem 0;
+      }
+      a,
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        color: white;
+      }
+      #splash {
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBzdGFuZGFsb25lPSdubyc/Pg0KPHN2ZyB2aWV3Qm94PScwIDAgNDggMzYnIHdpZHRoPSc5NicgaGVpZ2h0PSc3MicgZmlsbD0ncmVkJyBzdHJva2U9J3JlZCcgc3Ryb2tlLXdpZHRoPScwLjEnIHN0cm9rZS1vcGFjaXR5PScxJyB2ZXJzaW9uPScyLjAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+DQogIDxnIGlkPSdqb2huJz4NCiAgICA8cGF0aCBkPSdNMCwxMiBhNiw2IDAgMCAwIDEyLDAgTTEyLDEyIGwwLC0xMiBsLTMsMCBsMCwxMiBsMywwIHonLz4NCiAgICA8Y2lyY2xlIGN4PScxOCcgY3k9JzEyJyByPSc2Jy8+DQogICAgPHBhdGggZD0nTTI0LDE4IGE2LDYgMCAwIDEgMTIsMCB6Jy8+DQogICAgPHBhdGggZD0nTTI0LDAgbDAsMTggbDMsMCBsMCwtMTggbC0zLDAgeicvPg0KICAgIDxwYXRoIGQ9J00zNiwxMiBhNiw2IDAgMCAxIDEyLDAgTTM2LDEyIGwwLDYgbDMsMCBsMCwtNiBsLTMsMCBNNDUsMTIgbDAsNiBsMywwIGwwLC02IGwtMywwIHonLz4NCiAgPC9nPg0KICA8dXNlIGhyZWY9JyNqb2huJyB4PSctMjQnIHk9JzE4Jy8+DQogIDx1c2UgaHJlZj0nI2pvaG4nIHg9JzI0JyB5PScxOCcvPg0KPC9zdmc+DQo=");
+        background-size: 36vh;
+        background-position-y: bottom;
+        animation: scroll 1.6s linear infinite;
+        width: 100%;
+        height: 100vh;
+      }
+      @keyframes scroll {
+        0% {
+          background-position-x: 0;
+        }
+        
+        100% {
+          background-position-x: 36vh;
+        }
+      }
+      .text {
+        margin: 0 0.5rem;
+      }
+      #content {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5rem;
+      }
+      .dull {
+        color: #f0f0f0;
+      }
+      .left {
+        text-align: left;
+      }
+      .right {
+        text-align: right;
+        margin-left: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="splash"></div>
+    <div id="content" class="text">
+      <div class="left">
+        <p>Computer person <span class="dull">based in</span> Lancashire,&nbsp;UK</p>
+      </div>
+      <div class="right">
+        <p>
+          <a href="#">Contact</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
